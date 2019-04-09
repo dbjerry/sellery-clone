@@ -1,38 +1,45 @@
 body {
-  background-color: #ffffff;
-  color: #000000;
+  margin: 0;
+}
+
+* {
+  outline: none;
+  word-break: keep-all;
+}
+
+#app {
   text-align: center;
+  color: #2c3e50;
 }
 
-.container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: table;
-}
-
-.js-main {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-}
-
-.js-spec {
+.main-wrap {
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
-.nav-bottom {
-  bottom: 20px;
-  width: 100%;
-  position: absolute;
-  text-align: center;
+.section {
+  display: table;
+  width: 100vw;
+  height: 100%!important;
+  position: relative;
 }
 
-p {
-  margin-top: 0;
-  font-size: 4em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+.section .section-content {
+  display: table-cell;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+  background-image: inherit;
+  position: relative;
+  overflow: hidden
+}
+
+.fullpage-wrapper {
+  height: 100%;
+  position: relative;
+  touch-action: none;
+  transform: translate3d(0px, 0px, 0px);
 }

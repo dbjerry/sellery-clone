@@ -27,7 +27,7 @@ body {
   position: relative;
 }
 
-.section .section-content {
+.section .section-content{
   display: table-cell;
   width: 100vw;
   height: 100vh;

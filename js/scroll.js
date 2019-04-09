@@ -19,17 +19,18 @@ const section = body.querySelector('.section');
 
 function onMouseWheel(){
   window.onmousewheel = function(e){
-    if(e.wheelDelta === -120){
+    if(e.wheelDelta <= 0){
       console.log('wheel down');
-    } else {
+      window.onscroll(-window.innerHeight);
+    } else if(e.wheelDelta >= 0) {
       console.log('wheel up');
-      scrollTo(document.querySelector('.sc2'), 'down');
+      console.log(window.innerHeight); // 722
     }
   }
 }
 
 function init(){
-  onMouseWheel();
+  // onMouseWheel();
   // onMouseOver();
 }
 

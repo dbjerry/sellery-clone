@@ -1,8 +1,13 @@
-const navBottom = document.querySelector(".nav-bottom");
-const nextBtn = navBottom.querySelector(".nextBtn");
+const body = document.querySelector("body");
 
-function handleButton(event){
-  console.dir(event);
+function handleScroll(event){
+  console.log(event);
 }
 
-nextBtn.addEventListener('click', handleButton);
+function init(){
+  body.onscroll = function(){
+    handleScroll();
+  };
+}
+
+init();

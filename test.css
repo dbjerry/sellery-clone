@@ -1,0 +1,38 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: table;
+}
+
+.js-main {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+.js-spec {
+  position: fixed;
+}
+
+.nav-bottom {
+  bottom: 20px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  font-size: 4em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

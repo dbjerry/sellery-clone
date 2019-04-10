@@ -1,6 +1,5 @@
-const SECTION_NUM = 0;
-const clockContainer = document.querySelector(`sec${SECTION_NUM}`),
-  clockTitle = document.querySelector(".clockTitle");
+const clockContainer = document.querySelector('#section0'),
+  clockTitle = document.querySelector("p");
 
 function getTime(){
   const date = new Date();

@@ -1,5 +1,6 @@
 const spec_section_parent = document.querySelector('.section').parentNode;
 const spec_section = document.querySelector('.section');
+const _body = document.querySelector('body');
 const CLASSNAME_NUM = 1;
 
 function onMouseWheel(name){
@@ -7,8 +8,17 @@ function onMouseWheel(name){
   let nextDiv = name.nextElementSibling;
   window.onmousewheel = function(e){
     if(e.wheelDelta <= 0){
-      console.log(nextDiv, 'wheel down');
-      spec_section.animate({scrollTop : nextDiv.offsetTop}, 400);
+      console.log(nextDiv.offsetTop, 'wheel down');
+      spec_section.animate([
+        {
+          opacity: 0,
+          color: "#fff"
+        }, 
+        {
+          opacity: 1,
+          color: "#000"
+        }
+      ], 1000);
     } else if(e.wheelDelta >= 0) {
       console.log(previousDiv, 'wheel up');
     }

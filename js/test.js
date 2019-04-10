@@ -8,7 +8,6 @@ function onMouseWheel(name){
   let nextDiv = name.nextElementSibling;
   window.onmousewheel = function(e){
     if(e.wheelDelta <= 0){
-      pHTML.innerText = '??????????';
       console.log(nextDiv.offsetTop, 'wheel down');
       spec_section.animate([
         {

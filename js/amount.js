@@ -3,7 +3,7 @@
  */
 function checkInputValue(t){
   if(t[1].value === ''){
-    fullpage_api.setAllowScrolling(false);
+    fullpage_api.setAllowScrolling(false, 'down');
   } else {
     fullpage_api.setAllowScrolling(true);
   }
@@ -16,6 +16,8 @@ function getCurrentSection(e){
   if(e.target.parentNode.id === 'section1'){
     const div_target = e.target.getElementsByTagName('input');
     checkInputValue(div_target);
+  } else {
+    fullpage_api.setAllowScrolling(true);
   }
 }
 
